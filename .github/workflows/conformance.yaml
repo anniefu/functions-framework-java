@@ -42,8 +42,9 @@ jobs:
         startDelay: 10
 
     - name: Run background event conformance tests
-      uses: GoogleCloudPlatform/functions-framework-conformance/action@v1.0.0
+      uses: anniefu/functions-framework-conformance/action@useTmp
       with:
+        version: 'v1.0.0'
         functionType: 'legacyevent'
         useBuildpacks: false
         validateMapping: false
@@ -51,8 +52,9 @@ jobs:
         startDelay: 10
 
     - name: Run cloudevent conformance tests
-      uses: GoogleCloudPlatform/functions-framework-conformance/action@v1.0.0
+      uses: anniefu/functions-framework-conformance/action@useTmp
       with:
+        version: 'v1.0.0'
         functionType: 'cloudevent'
         useBuildpacks: false
         validateMapping: true
