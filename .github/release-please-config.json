@@ -1,0 +1,13 @@
+{
+    "extra-files": [
+        {
+            "type": "xml",
+            "path": "functions-framework-api/pom.xml",
+            "xpath": "/project/parent/version"
+        },
+        {
+            "type": "pom",
+            "path": "invoker/core/pom.xml"
+        }
+    ]
+}
