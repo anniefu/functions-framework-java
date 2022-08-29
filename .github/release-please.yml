@@ -1,0 +1,8 @@
+primaryBranch: releasePlease
+handleGHRelease: true
+monorepoTags: true
+# path:  invoker
+releaseType: maven
+manifest: true
+manifestConfig: '.github/release-please-config.json'
+manifestFile: '.github/release-please-manifest.json'
