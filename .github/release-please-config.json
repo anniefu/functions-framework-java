@@ -1,0 +1,14 @@
+{
+    "packages": {
+        "functions-framework-api": {
+            "release-type": "go"
+        }
+    },
+    "extra-files": [
+        {
+            "type": "xml",
+            "path": "functions-framework-api/pom.xml",
+            "xpath": "/project/parent/version"
+        }
+    ]
+}
