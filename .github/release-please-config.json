@@ -1,0 +1,10 @@
+{
+    "packages": {
+        "functions-framework-api": {
+            "release-type": "maven"
+        },
+        "invoker": {
+            "release-type": "maven"
+        }
+    }
+}
