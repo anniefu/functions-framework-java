@@ -1,4 +1,5 @@
 {
+    "separate-pull-requests": false,
     "packages": {
         "functions-framework-api": {
             "release-type": "maven",
@@ -6,13 +7,75 @@
             "extra-files": [
                 {
                     "type": "xml",
-                    "path": "functions-framework-api/pom.xml",
-                    "xpath": "/project/parent/version"
-                },
+                    "path": "pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='functions-framework-api']/parent::*/*[local-name()='version']"
+                }
+            ]
+        },
+        "invoker": {
+            "release-type": "maven",
+            "component": "java-function-invoker",
+            "extra-files": [
                 {
                     "type": "xml",
                     "path": "pom.xml",
-                    "xpath": "/project/parent/version"
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker-parent']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "core/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker-parent']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "core/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "core/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker-testfunction']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "conformance/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker-parent']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "conformance/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='conformance']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "testfunction/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-parent']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "testfunction/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker-testfunction']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "function-maven-plugin/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker-parent']/parent::*/*[local-name()='version']"
+                },
+                {
+                    "type": "xml",
+                    "path": "function-maven-plugin/pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='java-function-invoker']/parent::*/*[local-name()='version']"
+                }
+            ]
+        },
+        "function-maven-plugin": {
+            "release-type": "maven",
+            "component": "function-maven-plugin",
+            "extra-files": [
+                {
+                    "type": "xml",
+                    "path": "pom.xml",
+                    "xpath": "//*[local-name()='artifactId' and text()='function-maven-plugin']/parent::*/*[local-name()='version']"
                 }
             ]
         }
