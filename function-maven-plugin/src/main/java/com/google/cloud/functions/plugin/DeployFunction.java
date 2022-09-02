@@ -39,7 +39,7 @@ import org.apache.maven.plugins.annotations.ResolutionScope;
 @Execute(phase = LifecyclePhase.NONE)
 public class DeployFunction extends CloudSdkMojo {
 
-  /** The Google Cloud Platform project Id to use for this invocation. */
+  /** The Google Cloud Platform project Id to use for this invocation. Force a release. */
   @Parameter(alias = "deploy.projectId", property = "function.deploy.projectId")
   protected String projectId;
 
