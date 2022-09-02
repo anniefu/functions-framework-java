@@ -4,7 +4,7 @@ import io.cloudevents.CloudEvent;
 
 /**
  * Represents a Cloud Function that is activated by an event and parsed into a {@link CloudEvent}
- * object.
+ * object. This is a feat.
  */
 @FunctionalInterface
 public interface CloudEventsFunction {
