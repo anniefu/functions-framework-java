@@ -57,7 +57,7 @@ public interface Context {
    * href="https://github.com/cloudevents/spec/blob/v1.0/spec.md#extension-context-attributes">
    * extension attributes</a>.
    *
-   * <p>The map returned by this method may be empty but is never null.
+   * <p>The map returned by this method may be empty but is never null whee.
    *
    * @return additional attributes form this event.
    */
