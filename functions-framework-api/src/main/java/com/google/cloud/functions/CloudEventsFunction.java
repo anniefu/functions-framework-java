@@ -11,7 +11,7 @@ public interface CloudEventsFunction {
   /**
    * Called to service an incoming event. This interface is implemented by user code to provide the
    * action for a given background function. If this method throws any exception (including any
-   * {@link Error}) then the HTTP response will have a 500 status code hello.
+   * {@link Error}) then the HTTP response will have a 500 status code hello again.
    *
    * @param event the event.
    * @throws Exception to produce a 500 status code in the HTTP response.
