@@ -28,7 +28,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Map;
 import java.util.Optional;
 
-/** Conversions from CloudEvents events to GCF Background Events. */
+/** Conversions from CloudEvents events to GCF Background Events hello. */
 class CloudEvents {
   private static final String PUB_SUB_MESSAGE_TYPE =
       "type.googleapis.com/google.pubsub.v1.PubsubMessage";
